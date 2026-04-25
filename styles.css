@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+header {
+
+    margin-top: 47px;
+    margin-left: 42px;
+
+}
+
+.Link-menu {
+
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+letter-spacing: 0.88px;
+text-align: center;
+margin-right: 32px;
+cursor: pointer;
+}
+
+.button-sign-up { 
+
+background: #6FBF44;
+border: 1px solid #4CB538;
+border-radius: 6PX;
+width: 154px;
+height: 51px;
+cursor: pointer;
+
+font-weight: 500;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 1px;
+color: #FFFFFF;
+}
+img {
+    margin: 163px 0 0 123px;
+    display: inline-block;
+     vertical-align: top;
+     
+}
+div {
+      display: inline-block;
+      margin-left: 84px;
+      width: 493px;
+      margin-top: 342px;
+}
+
+h1 { 
+font-weight: 700;
+font-size: 62px;
+line-height: 82px;
+letter-spacing: 0.6px;
+color: #161A49;
+
+}
+ 
+p {
+font-weight: 400;
+font-size: 18px;
+line-height: 33px;
+letter-spacing: 0.5px;
+color: #4B505A;
+margin-top: 47px;
+margin-bottom: 55px;
+
+}
+.Link-learn-more {
+
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+letter-spacing: 1px;
+color: #6FBF44;
+cursor: pointer;
+background: transparent;
+border: none;
+}
+
+/*Media query para celulares*/
+@media screen and (max-width: 768px) {
+  header {
+    display: none;  /* o menu desparece no celular*/
+  }
+  .Link-menu {
+    display: block;  /* empilha os links verticalmente*/
+  }
+  .button-sign-up {
+    width: 100%; /* botão ocupa a largura total*/
+    margin:10px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column; /*coloca a imagem em cima e o texto embaixo */
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+      
+  }
+img {
+    margin: 40px 0 0 0;
+/*remove as margens laterais grandes*/
+max-width: 90%; /* garante que a imagem não transborde*/
+height: auto;
+}
+div {
+        margin-left: 0;     /* Remove o recuo da esquerda */
+        margin-top: 30px;   /* Ajusta o espaçamento superior */
+        width: 100%;        /* Ocupa a largura total do celular */
+    }
+
+    h1 {
+        font-size: 32px;    /* Diminui o título para caber na tela */
+        line-height: 42px;
+    }
+
+    p {
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+}
+
+    
